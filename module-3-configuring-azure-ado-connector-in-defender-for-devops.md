@@ -25,33 +25,33 @@ In this exercise you will create a new Azure DevOps organization.
 
     ![](images/m3-img48.png)
 
-5. Navigate to **Microsoft Defender for Cloud** on the **Azure Portal**. Click on **Environment Settings (1)** click the **Add environment (2)** button and click **Azure DevOps (preview) (3)** option. 
+5. Navigate to **Microsoft Defender for Cloud** on the **Azure Portal**. Click on **Environment Settings (1)** click the **Add environment (2)** button and click **Azure DevOps (3)** option. 
 
-    ![](images/m3-img1.png)
+    ![](images/m3a-img1.png)
 
-6. Enter the **Name** for the connector as `CNAPP-Devops` **(1)**, select your **Subscription (2)**, select **asclab (3)** resource group, select any **Region (3)**. Select **Next : Select plans > (5)**.
+6. Enter the **Connector name** for the connector as `CNAPP-Devops` **(1)**, select your **Subscription (2)**, select **asclab (3)** resource group, select any **Region (3)**. Select **Next : Select plans > (5)**.
 
-    ![](images/m3-img2.png)
+    ![](images/m3a-img2.png)
 
-7. In the next page leave the default selection with **DevOps** selected and click **Next: Authorize connection >** button to continue. 
+7. In the next page leave the default selection with **DevOps** selected and click **Next: Configure access >** button to continue. 
 
-    ![](images/m3-img3.png)
+    ![](images/m3a-img3.png)
 
 8. Click **Authorize** button. If this is the first time you’re authorizing your DevOps connection, you’ll receive a pop-up screen, that will ask your permission to authorize. Scroll down the pop-up window screen and click the **Accept** button as shown in the sample below:
 
-    ![](images/m3-img4.png)
+    ![](images/m3a-img4.png)
 
     ![](images/m3-img5.png)
 
    > **Note**: When you click **Accept** in your Azure DevOps, you’ll notice the proof of Authorization to the **Microsoft Security DevOps** App. You can find this in your Azure ADO organization, under the **Personal Access tokens** / **User Settings** / **Authorizatons**.  
 
-9. After the authorization is complete, select your Azure ADO organization **odluser<inject key="Deployment ID" enableCopy="false"/> (1)** keep the option **Auto discovery of projects (2)** enabled. 	Click **Review and create (3)** button to continue.
+9. After the authorization is complete, select **All existing and future organizations (1)**.	Click **Review and genrate (2)** button to continue.
 
-      ![](images/m3-img8.png)
+      ![](images/m3a-img8.png)
 
 10. Click on **Create**.
 
-      ![](images/m3-img9.png)
+      ![](images/m3a-img9.png)
       
 11. After some minutes you will see the Azure DevOps connector in the **Environment settings** page and in about 15 minutes, you will start to seeing the total resources number populating.
 
@@ -159,11 +159,11 @@ In order to view the scan results (when you execute the pipelines), in an easier
 
 10. In the **build-agent** page, click on **Instances** option in the left. Confirm that the build-agents are **Running**. 
 
-     ![](images/m3-img27.png)
+     ![](images/m3a-img27.png)
 
-11. Navigate to **build-agent_1** and click on **Networking (1)** and select **Add inbound port rule (2)**.
+11. Navigate to **build-agent_1** and click on **Network Setting (1)**, click on **create port rule (2)** and select **inbound port rule (3)**.
 
-     ![](images/addport.png)
+     ![](images/addport1.png)
 
 12. Enter `3389` **(1)** under **Destination port range** and click **Add (2)**.
      
