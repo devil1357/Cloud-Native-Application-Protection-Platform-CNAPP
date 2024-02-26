@@ -5,27 +5,35 @@ This exercise guides you on how to validate and use Defender for Containers.
 
 ### Exercise 1: Verify Docker Installation
 
-1. From the **Virtual Machine** desktop click on **Docker**.
+1. From the **Virtual Machine** desktop, click on **Start**, and click on **Docker Desktop**.
  
-    ![](images/m2-img1.png)
+    ![](images/docker1.png)
 
-2. Click **Accept** on **Docker Subscription Service Agreement**.
+2. Complete the installation of the Docker Desktop, click on **Finish**.
+
+    ![](images/docker2.png)
+
+3. Click **Accept** on **Docker Subscription Service Agreement**.
 
     ![](images/m2-img2.png)
 
-3. Next, Click on **Skip**.
+4. In Welcome to Docker Desktop, click on **Continue without signing in**.
 
-    ![](images/m2-img3.png)
+    ![](images/docker3.png)
 
-4. Wait for the **Docker Engine** to start. 
+5. In the Welcome survey, Click on **Skip survey**.
 
-    ![](images/m2-img4.png)
+    ![](images/docker4.png)
+
+6. Wait for the **Docker Engine** to start. 
+
+    ![](images/docker5.png)
     
-5. Search for PowerShell in Search bar and select **Windows PowerShell**.
+7. Search for PowerShell in Search bar and select **Windows PowerShell**.
 
    ![Open Powershell](images/open-powershell.png)
 
-6. Verify your docker version by executing in PowerShell. 
+8. Verify your docker version by executing in PowerShell. 
 
    ```
    docker version
@@ -42,7 +50,7 @@ Now you will use Docker to download a vulnerable image from it and push it into 
 
 1. Navigate to the Azure Portal, search for **container** **(1)** in the search box and select **Container registries** **(2)**.
 
-   ![Container registry in Azure](images/serach-cr.png)
+   ![Container registry in Azure](images/serach-cr1.png)
 
 2. Open the Container Registry named **asclabcrxxxxxx**.
 
@@ -50,7 +58,7 @@ Now you will use Docker to download a vulnerable image from it and push it into 
 
 3. In the Overview of it, verify the Login server name only. 
 
-   ![ACR server name](images/copy-crname.png)
+   ![ACR server name](images/copy-crname1.png)
 
 4.	Switch back to PowerShell, you will also need to login to your Azure subscription via **az login**. Enter the following **Email/Username** and **Password** in the browser and click on **Sign in**:
 

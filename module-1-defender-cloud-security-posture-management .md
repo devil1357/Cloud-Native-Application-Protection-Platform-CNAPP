@@ -79,7 +79,6 @@ In this exercise, you will learn how to enable Defender for CSPM, and leverage D
 
 5. You will find the list of SQL servers with managed identity.
 
-
 6. You can also explore and build your own queries using query builder. Clear the previous query by clicking **Clear All** and **Confirm**. Next, from the dropdown select **Compute (1) -> Virtual machines (2) -> Azure Virtual Machines (3)** then click **Done (4)**. Click Search to view VMs with this vulnerability.
 
       ![](images/m1-img9.png)
@@ -114,37 +113,33 @@ In this exercise, you will learn how to enable Defender for CSPM, and leverage D
 
 ## Exercise 4: Assign Governance Rule
 
-1. From **Defender for Cloud** menu, click on **Environment Settings (1)** page and select your subscription **(2)**.
+1. From the **Defender for Cloud** menu, click on **Environment Settings (1)** page and click on **Governance rules (2)**.
 
-    ![](images/m1-img2.png)
+    ![](images/governance-rules.png)
 
-2. Under **Policy settings** Select **Governance Rules (1)** and click on **Enter the new experience (2)**.
-
-    ![](images/m1-img19.png)
-
-3. Click on **+ Create governance rule**.
+2. Click on **+ Create governance rule**.
 
     ![](images/m1-img20.png)
 
-4. Enter **Rule name** as `CNAPP-Rule` **(1)**, select **Scope** at subscription level **(2)** and **Priority** `100` **(3)**. Click **Next (4)**.
+3. Enter **Rule name** as `CNAPP-Rule` **(1)**, select **Scope** at subscription level **(2)** and **Priority** `100` **(3)**. Click **Next (4)**.
 
     ![](images/m1-img21.png)
     
-5. Under **conditions** provide the below details and click **Create (5)**
+4. Under **conditions** provide the below details and click **Create (5)**
 	
    - **By severity**: `High` **(1)**
    - **Owner**: `By email address` **(2)**
    - **Email address**: <inject key="AzureAdUserEmail"></inject> **(3)**
    - **Remediation timeframe**: `90 days` **(4)**
 
-    ![](images/m1-img22.png)
+    ![](images/governance-conditions.png)
 
-6. On the **Rule created succsessfuly** pop-up select the check box next to **Apply rule to the existing recommendations that are unassigned** and click on **Ok**.
+5. On the **Rule created succsessfuly** pop-up select the check box next to **Apply rule to the existing recommendations that are unassigned** and click on **Ok**.
 
     ![](images/a1.6.png)
 
-7. Click on **Governance report** to view the status of tasks **Complete, Ontime and Unassign**
+6. Click on **Governance report** to view the status of tasks **Complete, Ontime and Unassign**
 
-    ![](images/m1-img23.png)
+    ![](images/governance-report.png)
     
     ![](images/m1-img24.png)
