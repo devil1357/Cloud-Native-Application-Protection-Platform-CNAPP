@@ -205,6 +205,26 @@ In order to view the scan results (when you execute the pipelines), in an easier
 
      ![](images/nodejs1.png)
      
+19. Paste the following commands to install ***dotnet* (1)** and click on **Run (2)** button.
+
+    ```
+    $WebClient = New-Object System.Net.WebClient
+    $WebClient.DownloadFile("https://download.visualstudio.microsoft.com/download/pr/34d3e426-9f3c-45a6-8496-f21b3adbbf5f/475aec17378cc8ab0fcfe535e84698f9/aspnetcore-runtime-8.0.2-win-x64.exe","C:\aspnetcore-runtime-8.0.2-win-x64.exe")
+    $arguments = "/install /quiet /norestart"
+    Start-Process "C:\aspnetcore-runtime-8.0.2-win-x64.exe" -ArgumentList $arguments -Wait
+    sleep 5
+    ```
+    ![](images/dotnet-runtime.png)
+
+    ```
+    $WebClient = New-Object System.Net.WebClient
+    $WebClient.DownloadFile("https://download.visualstudio.microsoft.com/download/pr/ab5e947d-3bfc-4948-94a1-847576d949d4/bb11039b70476a33d2023df6f8201ae2/dotnet-sdk-8.0.201-win-x64.exe","C:\dotnet-sdk-8.0.201-win-x64.exe")
+    $arguments = "/install /quiet /norestart"
+    Start-Process "C:\dotnet-sdk-8.0.201-win-x64.exe" -ArgumentList $arguments -Wait
+    sleep 5
+    ```
+    ![](images/dotnet-sdk.png)
+
 19. Next, in the windows search bar type ***cmd*** and select **Command Prompt**.
 
      ![](images/cmd1.png)
