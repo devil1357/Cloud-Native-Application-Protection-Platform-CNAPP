@@ -11,6 +11,22 @@ In this exercise you will create a new Azure DevOps organization.
     * Email:  **<inject key="AzureAdUserEmail" enableCopy="true"/>** 
     * Password:  **<inject key="AzureAdUserPassword" enableCopy="true"/>**
 
+2. Navigate to the Azure Portal, search for **Azure Devops organizations** (1) in the search box and select **Azure DevOps Orgainzations** (2).
+
+    ![](images/m3-img6a.png)
+
+3. Click on **My Azure DevOps Organizations**. 
+
+    ![](images/m3-img6b.png)
+
+4. On the Almost done.. page **Enter the Characters you see** and click on **Continue**.
+
+    ![](images/m3-img6c.png)
+
+5. On Get started with Azure DevOps click on **Continue**.
+
+    ![](images/m3-img6d.png)
+
 2. Click on **Organization settings**. 
 
     ![](images/m3-img6.png)
