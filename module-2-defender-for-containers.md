@@ -121,6 +121,13 @@ Now you will use Docker to download a vulnerable image from it and push it into 
 
     ![Image in ACR](images/cr-repos.png)
 
+	  > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+	
+	- Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
+	- Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+	- If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+	- If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+
 ### Exercise 3: Investigate the recommendation for vulnerabilities in ACR
 
 Once a vulnerable image has been pushed to the Azure Container Registry, then Microsoft Defender for Containers will start scanning the image for vulnerabilities, by using Qualys. You will now look into the recommendation in Microsoft Defender for Cloud for this. 
