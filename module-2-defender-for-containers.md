@@ -28,6 +28,8 @@ This exercise guides you on how to validate and use Defender for Containers.
 6. Wait for the **Docker Engine** to start. 
 
     ![](images/docker5.png)
+
+    >**Note:** The startup process will take about five minutes. If it takes longer, restart the virtual machine.
     
 7. Search for PowerShell in Search bar and select **Windows PowerShell**.
 
@@ -48,7 +50,7 @@ This exercise guides you on how to validate and use Defender for Containers.
 
 Now you will use Docker to download a vulnerable image from it and push it into our existing Azure Container registry.
 
-1. Navigate to the Azure Portal, search for **container** **(1)** in the search box and select **Container registries** **(2)**.
+1. Navigate to the Azure Portal, search for **Container registries** **(1)** in the search box and select **Container registries** **(2)**.
 
    ![Container registry in Azure](images/serach-cr1.png)
 
@@ -118,6 +120,13 @@ Now you will use Docker to download a vulnerable image from it and push it into 
 12. Now select **Repositories** **(1)** under Services in the **<inject key="Container registry" enableCopy="false"/>** Container Registry resource. Notice the **vulnerable image** **(2)** is found in the ACR repository.
 
     ![Image in ACR](images/cr-repos.png)
+
+	  > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+	
+	- Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
+	- Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+	- If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+	- If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
 ### Exercise 3: Investigate the recommendation for vulnerabilities in ACR
 

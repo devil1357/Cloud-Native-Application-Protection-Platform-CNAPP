@@ -25,37 +25,44 @@ In this exercise you will create a new Azure DevOps organization.
 
     ![](images/m3-img48.png)
 
-5. Navigate to **Microsoft Defender for Cloud** on the **Azure Portal**. Click on **Environment Settings (1)** click the **Add environment (2)** button and click **Azure DevOps (preview) (3)** option. 
+5. Navigate to **Microsoft Defender for Cloud** on the **Azure Portal**. Click on **Environment Settings (1)** click the **Add environment (2)** button and click **Azure DevOps (3)** option. 
 
-    ![](images/m3-img1.png)
+    ![](images/m3a-img1.png)
 
-6. Enter the **Name** for the connector as `CNAPP-Devops` **(1)**, select your **Subscription (2)**, select **asclab (3)** resource group, select any **Region (3)**. Select **Next : Select plans > (5)**.
+6. Enter the **Connector name** for the connector as `CNAPP-Devops` **(1)**, select your **Subscription (2)**, select **asclab (3)** resource group, select any **Region (3)**. Select **Next : Select plans > (5)**.
 
-    ![](images/m3-img2.png)
+    ![](images/m3a-img2.png)
 
-7. In the next page leave the default selection with **DevOps** selected and click **Next: Authorize connection >** button to continue. 
+7. In the next page leave the default selection with **DevOps** selected and click **Next: Configure access >** button to continue. 
 
-    ![](images/m3-img3.png)
+    ![](images/m3a-img3.png)
 
 8. Click **Authorize** button. If this is the first time you’re authorizing your DevOps connection, you’ll receive a pop-up screen, that will ask your permission to authorize. Scroll down the pop-up window screen and click the **Accept** button as shown in the sample below:
 
-    ![](images/m3-img4.png)
+    ![](images/m3a-img4.png)
 
     ![](images/m3-img5.png)
 
    > **Note**: When you click **Accept** in your Azure DevOps, you’ll notice the proof of Authorization to the **Microsoft Security DevOps** App. You can find this in your Azure ADO organization, under the **Personal Access tokens** / **User Settings** / **Authorizatons**.  
 
-9. After the authorization is complete, select your Azure ADO organization **odluser<inject key="Deployment ID" enableCopy="false"/> (1)** keep the option **Auto discovery of projects (2)** enabled. 	Click **Review and create (3)** button to continue.
+9. After the authorization is complete, select **All existing and future organizations (1)**.	Click **Review and genrate (2)** button to continue.
 
-      ![](images/m3-img8.png)
+      ![](images/m3a-img8.png)
 
 10. Click on **Create**.
 
-      ![](images/m3-img9.png)
+      ![](images/m3a-img9.png)
       
 11. After some minutes you will see the Azure DevOps connector in the **Environment settings** page and in about 15 minutes, you will start to seeing the total resources number populating.
 
       ![](images/m3-img49.png)
+
+	  > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+	
+	- Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
+	- Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+	- If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+	- If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
 ### Exercise 2: Configure the Microsoft Security DevOps Azure DevOps Extension
 
@@ -159,11 +166,11 @@ In order to view the scan results (when you execute the pipelines), in an easier
 
 10. In the **build-agent** page, click on **Instances** option in the left. Confirm that the build-agents are **Running**. 
 
-     ![](images/m3-img27.png)
+     ![](images/m3a-img27.png)
 
-11. Navigate to **build-agent_1** and click on **Networking (1)** and select **Add inbound port rule (2)**.
+11. Navigate to **build-agent_1** and click on **Network Setting (1)**, click on **create port rule (2)** and select **inbound port rule (3)**.
 
-     ![](images/addport.png)
+     ![](images/addport1.png)
 
 12. Enter `3389` **(1)** under **Destination port range** and click **Add (2)**.
      
@@ -205,6 +212,26 @@ In order to view the scan results (when you execute the pipelines), in an easier
 
      ![](images/nodejs1.png)
      
+19. Paste the following commands to install ***dotnet* (1)** and click on **Run (2)** button.
+
+    ```
+    $WebClient = New-Object System.Net.WebClient
+    $WebClient.DownloadFile("https://download.visualstudio.microsoft.com/download/pr/34d3e426-9f3c-45a6-8496-f21b3adbbf5f/475aec17378cc8ab0fcfe535e84698f9/aspnetcore-runtime-8.0.2-win-x64.exe","C:\aspnetcore-runtime-8.0.2-win-x64.exe")
+    $arguments = "/install /quiet /norestart"
+    Start-Process "C:\aspnetcore-runtime-8.0.2-win-x64.exe" -ArgumentList $arguments -Wait
+    sleep 5
+    ```
+    ![](images/dotnet-runtime.png)
+
+    ```
+    $WebClient = New-Object System.Net.WebClient
+    $WebClient.DownloadFile("https://download.visualstudio.microsoft.com/download/pr/ab5e947d-3bfc-4948-94a1-847576d949d4/bb11039b70476a33d2023df6f8201ae2/dotnet-sdk-8.0.201-win-x64.exe","C:\dotnet-sdk-8.0.201-win-x64.exe")
+    $arguments = "/install /quiet /norestart"
+    Start-Process "C:\dotnet-sdk-8.0.201-win-x64.exe" -ArgumentList $arguments -Wait
+    sleep 5
+    ```
+    ![](images/dotnet-sdk.png)
+
 19. Next, in the windows search bar type ***cmd*** and select **Command Prompt**.
 
      ![](images/cmd1.png)
@@ -258,6 +285,13 @@ In order to view the scan results (when you execute the pipelines), in an easier
 30. Navigate back to **Azure Portal**, on the **VMSS** page click on **Instances (1)** from the left menu, select both the **Build Agents (2)** and click **Upgrade (3)**.
 
      ![](images/upgradeinst.png)
+
+	  > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+	
+	- Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
+	- Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+	- If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+	- If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
 ### Exercise 5: Configure your pipeline using YAML 
 
@@ -358,6 +392,13 @@ The purpose of this exercise is to allow you to see how the extension used by De
 15. Once it finishes you can see scan done by Defender for DevOps. To do that click **Microsoft Security DevOps** section in the left and you will see the output of the actions that were done as shown below:
 
       ![](images/m3-img45.png)
+
+	  > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+	
+	- Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
+	- Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+	- If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+	- If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
 
 
