@@ -144,7 +144,7 @@ In this exercise, you will learn how to enable Defender for CSPM, and leverage D
     
     ![](images/m1-img24.png)
 
-<validation step="a9112eda-7782-494d-88f3-cd8108c7ed78" />
+    <validation step="a9112eda-7782-494d-88f3-cd8108c7ed78" />
 
   > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 	
