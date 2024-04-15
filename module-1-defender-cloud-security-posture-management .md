@@ -33,7 +33,7 @@ In this exercise, you will learn how to enable Defender for CSPM, and leverage D
 
       ![](images/m1-img3.png)
 
-4. Turn **On (1)** the **Agentless scanning for machines (preview)** and click **Continue (2)**.
+4. Turn **On (1)** the **Agentless scanning for machines** and click **Continue (2)**.
 
       ![](images/m1-img4.png)
 
