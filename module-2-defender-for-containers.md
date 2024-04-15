@@ -121,6 +121,8 @@ Now you will use Docker to download a vulnerable image from it and push it into 
 
     ![Image in ACR](images/cr-repos.png)
 
+<validation step="a9112eda-7782-494d-88f3-cd8108c7ed78" />
+
 	  > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 	
 	- Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
