@@ -93,7 +93,7 @@ In this exercise, you will learn how to configure GitHub Connector in Defender f
 
     jobs:
       security:
-        runs-on: windows-latest
+        runs-on: ubuntu-latest
         continue-on-error: false
         strategy:
           fail-fast: true
